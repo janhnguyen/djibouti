@@ -1,0 +1,403 @@
+.eventCreator{
+  padding-top: 10px;
+}
+
+
+@media (max-width: 1200px) {
+
+  .mobile-homepage {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #D9D9D9;
+    min-height: 100vh;
+    position: relative;
+  }
+
+  /* Top Bar */
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+  }
+
+  .current-location {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .location-icon {
+    font-size: 20px;
+    color: black;
+  }
+
+  .change-btn {
+    background: none;
+    border: none;
+    color: #313539;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .upcoming-events {
+    background: white;
+    margin: 15px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .upcoming-events h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  .event-card {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .event-title {
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    text-align: left;
+    width: 100%;
+  }
+
+  .event-time,
+  .event-countdown {
+    font-size: 13px;
+    color: #555;
+
+  }
+
+  .view-events-btn {
+    margin-top: 10px;
+    padding: 6px 12px;
+    background: #D7A582;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #040404;
+  }
+
+  .bottom-nav-container {
+    margin-top: auto;
+    width: 100%;
+  }
+
+  .bottombar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #D7A582;
+    padding: 12px;
+  }
+
+  .bottom-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .bottombar .bottom-icon-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .feed {
+    margin-bottom: 80px;
+  }
+}
+
+
+.profile-section-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  margin-top: 1%;
+  max-height: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+.profile-section p {
+  max-height: 0;
+  font-size: 12px;
+}
+
+.home-rightbar {
+  flex: 1;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 5px;
+}
+
+.search-icon {
+  color: gray;
+}
+
+.f-title,
+.chats-section h3 {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.f-id,
+.chat-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  text-align: left;
+}
+
+.f-id p,
+.chat-name {
+  max-height: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10%;
+}
+
+.friends-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: white;
+  overflow: hidden;
+  padding: 5px;
+  gap: 0;
+}
+
+.friend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Pushes dots to the right */
+  background: white;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid #ddd;
+}
+
+.friend-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.friend-icon {
+  font-size: 30px;
+  color: gray;
+  flex-shrink: 0;
+}
+
+.friend-username {
+  color: #000;
+  font-size: 14px;
+}
+
+.friend:hover,
+.chat:hover {
+  background: #e8e8e8;
+}
+
+.friend-options,
+.chat-options {
+  color: gray;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.chat-icon {
+  font-size: 30px;
+  color: gray;
+  margin-right: 10px;
+}
+
+.chats-section {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.home-feed {
+  border-radius: 25px;
+  flex: 3;
+  background-color: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+}
+
+.activity-section {
+  flex: 1;
+  max-height: 170px;
+  background-image: url('../../public/acts.jpeg');
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.feed {
+  flex: 4;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+
+.home {
+  background-color: white;
+}
+
+.homepage {
+  margin-top: 1.5%;
+  display: flex;
+  justify-content: center;
+}
+
+.homepage p {
+  color: black;
+  height: 100vh;
+}
+
+.home-leftbar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-leftbar button {
+  background-color: #45BA8B;
+  border-color: transparent;
+  border-radius: 25px;
+  color: white;
+  margin-top: 5%;
+  min-height: 40px;
+  max-width: 85%;
+  margin-left: 7%;
+}
+
+.Notifications-section {
+  max-width: 85%;
+  margin-left: 7%;
+  border-radius: 25px;
+  background-color: #D9D9D9;
+  margin-top: 8%;
+  max-height: 320px;
+  min-height: 320px;
+}
+
+.UpcomingEvents-section {
+  max-width: 85%;
+  margin-left: 7%;
+  border-radius: 25px;
+  background-color: #D9D9D9;
+  margin-top: 8%;
+  max-height: 120px;
+  min-height: 120px;
+}
+
+.UpcomingEvents-section h5,
+.Notifications-section h5 {
+  color: #000;
+  max-height: 0;
+  margin-top: 3%;
+  text-decoration: underline;
+}
+
+.profile-section {
+  background-color: #D9D9D9;
+  max-width: 90%;
+  min-height: 120px;
+  max-height: 120px;
+  margin-left: 5%;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.profile-section-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  flex: 2;
+}
+
+.login-button {
+  color: #0000FF;
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+

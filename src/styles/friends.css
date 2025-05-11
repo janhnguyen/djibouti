@@ -1,0 +1,67 @@
+.boday {
+    margin-top: 4%;
+    background-color: white;
+    min-height: max-content;
+}
+
+
+.words {
+    color: black;
+}
+
+.Friends-msg {
+    color: black;
+    margin-top: 0%;
+}
+
+.headerfriends {
+    display: flex;
+    margin-left: 3%;
+    margin-bottom: -2%;
+    align-items: center;
+}
+
+.headerfriends img {
+    width: 125px;
+    height: 125px;
+}
+
+.headerfriends h1 {
+    color: black;
+    font-size: 50px;
+}
+
+.headerfriends {
+    margin-top: -1%;
+}
+
+.title {
+    color: black;
+    font-size: 45px;
+    display: flex;
+    margin-left: 1%;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.title img {
+    width: 125px;
+    height: 125px;
+    margin-right: 0.5%;
+}
+
+@media (max-width: 805px) {
+    .boday {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin-top: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100% !important;
+    }
+
+    .header {
+        width: 100%;
+    }
+}

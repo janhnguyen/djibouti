@@ -1,0 +1,88 @@
+
+
+.cities-list-header {
+    color: #000;
+  }
+  
+  .cities-list-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 30px;
+    height: 100%;
+    padding: 30px 60px;
+  }
+  
+  
+  .city-list-item {
+    background-color: #d9d9d9;
+    border: #000 solid 1px;
+    border-radius: 10px;
+    position: relative;
+    height: 10%;
+    margin-bottom: 20px;
+    padding: 30px;
+  }
+  
+  .city-list-item:hover {
+    background-color: #d7a582;
+    box-shadow: #999 3px 3px;
+    position: relative;
+    bottom: 4px;
+    right: 4px;
+  }
+  
+  .city-name {
+    font-size: 20px;
+    color: #000;
+    font-family: "Righteous", sans-serif;
+    position:absolute;
+    left: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  
+  .view-city-info-btn {
+    position: absolute;
+    right: 8%;
+    font-size: small;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: #000 solid 1px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .view-city-info-btn:hover {
+    background-color: #969393;
+    color: #fff;
+  }
+  
+  .city-select-logo {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .view-info-logo {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  

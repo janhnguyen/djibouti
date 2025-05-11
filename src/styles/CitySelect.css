@@ -1,0 +1,75 @@
+/* Apply the .contain styles to the CitySelect component */
+.contain {
+    border: solid black 1px;
+    color: black;
+    width: 50%;
+    margin-left: 43%;
+    margin-top: 500px;
+    position: absolute;
+    height: fit-content;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.dropdown-container {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.city-dropdown {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.select-city-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d7a582;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.select-city-btn:hover {
+    background-color: #d7a582;
+}
+
+@media (max-width: 768px) {
+    .contain {
+        border: solid black 1px;
+        color: black;
+        width: 60%;
+        margin-left: auto;
+        margin-top: 180px;
+        z-index: 1;
+        position: absolute;
+        height: fit-content;
+        padding: 20px;
+        background-color: #f5f5f5;
+        border-radius: 8px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

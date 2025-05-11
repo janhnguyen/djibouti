@@ -1,0 +1,482 @@
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .styleguide {
+    display: flex; 
+    height: 100%;
+    background-image: linear-gradient(110deg,#bdecff,#cec5fc, #e3b9f9,  #e3b9f9, #D7A582,#c79979);
+  }
+
+  .styleguide h3 {
+    color: #000;
+    font-family: "Righteous", sans-serif;
+    font-size: 30px;
+    
+  }
+
+  .leftnav {
+    height: 100%;
+    position: fixed;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .leftnav a {
+    color: #000;
+    font-family: "Righteous", sans-serif;
+    font-weight: lighter;
+    font-size: 24px;
+    text-decoration: none;
+    margin-top: 30%;
+  }
+  
+  .leftnav a:hover {
+    color: dimgray;
+  }
+
+  
+  .stylecontain {
+    margin-left: 200px; 
+    margin-top: 70px;
+    flex-grow: 1; 
+    padding: 20px;
+    box-sizing: border-box; 
+    height: 100%;
+  }
+
+  .sectionContain {
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 200px;
+    display: flex;
+  }
+
+  .sectionHeaderContain{
+    height: 100%;
+    width: 30%;
+    align-items: center;
+  }
+
+  
+  .sectionHeaderContain h1 {
+    color: #000;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px;
+    text-align: center;
+  }
+  
+  .sectionOutputContain {
+    width: 80%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: #000 1px solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px
+  }
+  
+  .codeText {
+    margin-top: auto;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+  }
+
+  .codeOutputContent {
+    margin-top: auto;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .sectionContentContain {
+    height: fit-content;
+    width: 70%;
+    box-sizing: border-box;
+    margin-top: auto;
+  }
+  
+  .sectionContent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around; 
+    align-items: center;
+    border: #000 1px solid;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  #layoutContent {
+    padding: 0;
+    border-radius: 0;
+    flex-direction: column;
+    background-color: white;
+  }
+
+ 
+
+
+  .layoutText {
+    color: #000;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+  }
+
+  .footer p{
+    font-size: 14px;
+  }
+
+
+  /*color section*/
+  
+  .color-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .color-circle {
+    border: #000 1px solid;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .color-hex {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+
+  .font-display-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  /*font section*/
+
+  .font-display-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .font-item {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;
+    width: 80%;
+    margin: 20px 0;
+  }
+  
+  .font-example {
+    margin-right: 15px; 
+    font-size: 16px;
+    color: #000;
+  }
+  
+  
+  .header .font-example {
+    font-family: 'Righteous', sans-serif;
+    font-size: 36px;
+  }
+  
+ 
+  .logo .font-example {
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px; 
+  }
+  
+
+  .content .font-example {
+    font-family: 'Verdana', sans-serif;
+    font-size: 16px;
+    line-height: 1.5; 
+  }
+  
+
+  .subheading .font-example {
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    font-weight: normal;
+  }
+ 
+
+  
+  .see-code-button {
+    padding: 5px 10px;
+    background-color: #45BA8B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .see-code-button:hover {
+    background-color: #3e9174;
+  }
+
+  
+  /*icons section*/
+
+ 
+  .iconBox {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;             
+    justify-content: center;     
+    align-items: center; 
+  }
+
+  .iconBox:hover {
+    background-color: #0000;
+  }
+
+  .iconBox img {
+    width: 40px;
+    height: 40px;
+  }
+
+
+  /*feedback section*/
+
+  #feedbackContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  #feedbackContent p {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+
+
+  
+
+  /*
+  .stylecontain h1 {
+    display: block;
+    width: 100%;
+    color: #000;
+    text-align: left;
+    margin-left: 2%;
+    font-size: 1.5em;
+  }
+  
+  .tilecontain {
+    padding: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    display: grid;
+    background-color: #ffffff;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 2% 2%;
+  }
+  
+  .tile,
+  .tileHead,
+  .tileButton,
+  .tileBack,
+  .tilered,
+  .tileBody {
+    cursor: pointer;
+    background-color: #82B4D7;
+    display: block;
+    padding: 5% 1% 5% 1%;
+    border: 3px solid #000000;
+  }
+  
+  .tile:hover,
+  .tileHead:hover,
+  .tileButton:hover,
+  .tileBack:hover,
+  .tilered:hover,
+  .tileBody:hover {
+    filter: brightness(90%);
+  }
+  
+  .tilecontain p1 {
+    color: #000;
+  }
+  
+  .tileHead {
+    background-color: #d7a582;
+  }
+  
+  .tileButton {
+    background-color: #82B4D7;
+  }
+  
+  .tileBack {
+    background-image: linear-gradient(110deg,#bdecff,#cec5fc, #e3b9f9,  #e3b9f9, #D7A582,#c79979);
+  }
+  
+  .tileBody {
+    background-color: #ffffff;
+  }
+  .tilered {
+    background-color: #E37479;
+  }
+  
+  .fontsContain {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-left: 5%;
+    color: #000;
+    text-align: left;
+    cursor: pointer;
+    width: fit-content;
+    background-color: #ffff;
+  }
+  
+  .fontsContain h2:hover,
+  h3:hover,
+  h4:hover,
+  p2:hover,
+  p3:hover {
+    filter: brightness(90%);
+  }
+  
+  .fontsContain h2 {
+    font-family: "Righteous", sans-serif;
+    font-size: 1.8em;
+    font-weight: lighter;
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  .fontsContain h3 {
+    width: fit-content;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    font-weight: lighter;
+    color: #000;
+  }
+  .fontsContain h4 {
+    width: fit-content;
+    font-family: Arial, sans-serif;
+  }
+  .fontsContain p2 {
+    font-size: .8em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .fontsContain p3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: .8em;
+  }
+  
+  .feedbackinfocontain {
+    color: #000;
+    text-align: left;
+    margin-left: 5%;
+  }
+  
+  .feedbackinfocontain p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: .8em;
+  }
+  
+  .popupinfocontain {
+    color: #000;
+    text-align: left;
+    margin-left: 5%;
+  }
+  
+  .popupinfocontain p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: .8em;
+  }
+  
+  .popupinfocontain button {
+    cursor: pointer;
+    margin-left: 2%;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 15%;
+    padding: 1% 1% 1% 1%;
+    background-color: rgb(215 165 130);
+  }
+  
+  .popupinfocontain button:hover {
+    filter: brightness(90%);
+  }
+  
+  .feedbackinfocontain button {
+    cursor: pointer;
+    margin-left: 2%;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 15%;
+    padding: 1% 1% 1% 1%;
+    background-color: rgb(215 165 130);
+  }
+  
+  .feedbackinfocontain button:hover {
+    filter: brightness(90%);
+  }
+  .layoutinfo{
+    padding-left: 2%;
+    display: flex;
+    flex-direction: row;
+    color: #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: .8em;
+  }
+  .layoutinfo img {
+    width: 100%;
+    height: 400%;
+  }
+  .layoutinfo button {
+    margin-top: 1%;
+    cursor: pointer;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 15%;
+    padding: 1% 1% 1% 1%;
+    background-color: rgb(215 165 130);
+  }
+  
+  .layoutinfo button:hover {
+    filter: brightness(90%);
+  }
+  .layoutcontianer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1%;
+  }*/

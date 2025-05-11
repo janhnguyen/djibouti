@@ -1,0 +1,327 @@
+.styleguide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  font-family: Didot, serif;
+}
+
+.stylecontain {
+  margin-top: 2%;
+  height: fit-content;
+  width: 80%;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  margin-bottom: 5%;
+}
+
+.stylecontain h1 {
+  display: block;
+  width: 100%;
+  color: #000;
+  text-align: left;
+  margin-left: 2%;
+  font-size: 1.5em;
+}
+
+.tilecontain {
+  padding: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 2%;
+  display: grid;
+  background-color: #ffffff;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 2% 2%;
+}
+
+.tile,
+.tileHead,
+.tileButton,
+.tileBack,
+.tilered,
+.tilegreen,
+.tileBody {
+  cursor: pointer;
+  background-color: #82B4D7;
+  display: block;
+  padding: 5% 1% 5% 1%;
+  border: 3px solid #000000;
+}
+
+.tile:hover,
+.tileHead:hover,
+.tileButton:hover,
+.tileBack:hover,
+.tilered:hover,
+.tilegreen:hover,
+.tileBody:hover {
+  filter: brightness(90%);
+}
+
+.tilecontain p1 {
+  color: #000;
+}
+
+.tileHead {
+  background-color: #d7a582;
+}
+
+.tileButton {
+  background-color: #d7a582;
+}
+
+.tileBody {
+  background-color: #ffffff;
+}
+.tilered {
+  background-color: #E37479;
+}
+.tilegreen {
+  background-color: #009207;
+}
+
+.fontsContain {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  margin-left: 5%;
+  color: #000;
+  text-align: left;
+  cursor: pointer;
+  width: fit-content;
+  background-color: #ffff;
+}
+
+.fontsContain h2:hover,
+h3:hover,
+h4:hover,
+p2:hover,
+p3:hover {
+  filter: brightness(90%);
+}
+
+.fontsContain h2 {
+  font-family: "Righteous", sans-serif;
+  font-size: 1.8em;
+  font-weight: lighter;
+  color: #000;
+  text-decoration: underline;
+}
+
+.fontsContain h3 {
+  width: fit-content;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2em;
+  font-weight: lighter;
+  color: #000;
+}
+.fontsContain h4 {
+  width: fit-content;
+  font-family: Arial, sans-serif;
+}
+.fontsContain p2 {
+  font-size: .8em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fontsContain p3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: .8em;
+}
+
+.feedbackinfocontain {
+  color: #000;
+  text-align: left;
+  margin-left: 5%;
+}
+
+.feedbackinfocontain p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: .8em;
+}
+
+.popupinfocontain {
+  color: #000;
+  text-align: left;
+  margin-left: 5%;
+}
+
+.popupinfocontain p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: .8em;
+}
+
+.popupinfocontain button {
+  cursor: pointer;
+  margin-left: 2%;
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 15%;
+  padding: 1% 1% 1% 1%;
+  background-color: rgb(215 165 130);
+}
+
+.popupinfocontain button:hover {
+  filter: brightness(90%);
+}
+
+.feedbackinfocontain button {
+  cursor: pointer;
+  margin-left: 2%;
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 15%;
+  padding: 1% 1% 1% 1%;
+  background-color: rgb(215 165 130);
+}
+
+.feedbackinfocontain button:hover {
+  filter: brightness(90%);
+}
+.layoutinfo{
+  padding-left: 2%;
+  display: flex;
+  flex-direction: row;
+  color: #000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: .8em;
+}
+.layoutinfo img {
+  width: 100%;
+  height: 400%;
+}
+.layoutinfo button {
+  margin-top: 1%;
+  cursor: pointer;
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 15%;
+  padding: 1% 1% 1% 1%;
+  background-color: rgb(215 165 130);
+}
+
+.layoutinfo button:hover {
+  filter: brightness(90%);
+}
+.layoutcontianer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1%;
+}
+
+.tilecontain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.color-tile {
+  flex: 1 1 calc(25% - 24px);
+  max-width: calc(25% - 24px);
+  min-width: 150px;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tileHead {
+  background-color: #d7a582;
+}
+.tileButton {
+  background-color: #d7a582;
+}
+.tileBody {
+  background-color: #ffffff;
+  color: #000;
+  border: 1px solid #ddd;
+}
+.tilered {
+  background-color: #E37479;
+}
+.tilegreen {
+  background-color: #009207;
+}
+
+.popup-button {
+  background-color: #d7a582;
+  color: black;
+  padding: 10px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.popup-button:hover {
+  background-color: #c36f4a;
+  color: white;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.popup-code {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin-bottom: 10px;
+  color: black;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .color-tile {
+    flex: 1 1 calc(33.33% - 24px);
+    max-width: calc(33.33% - 24px);
+  }
+}
+
+@media (max-width: 768px) {
+  .color-tile {
+    flex: 1 1 calc(50% - 24px);
+    max-width: calc(50% - 24px);
+  }
+}
+
+@media (max-width: 480px) {
+  .color-tile {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .popup-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

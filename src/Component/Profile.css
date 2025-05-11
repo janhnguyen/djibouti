@@ -1,0 +1,225 @@
+.profileContainer{
+    display: flex;
+    height: 100%;
+    background: white;
+}
+
+.leftProfileColumn{
+    width: 20%;
+    height: 100%;
+    overflow: auto;
+}
+
+.profileButton{
+    display: flex;
+    gap: 15%;
+    background: #d9d9d9;
+    border-radius: 40px;
+    height: 115px;
+    width: 240px;
+    margin-left: 5%;
+    margin-top: 15%;
+    text-decoration: none;
+}
+
+.profilePic{
+    margin-left: 30%;
+    margin-top: 25%;
+    width: 75px;
+    height: 75px;
+}
+
+.profileText{
+    margin-top: 7%;
+    color: black;
+    font-size: 14px;
+    text-align: left;
+}
+
+.profileName{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.postButton{
+    background: #45BA8B;
+    border-radius: 100px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    width: 240px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 20px;
+}
+
+.profileNotifications{
+    margin-left: 5%;
+    margin-top: 10%;
+    background: #d9d9d9;
+    border-radius: 40px;
+    height: 600px;
+    width: 240px;
+    color: black;
+    font-size: 14px;
+}
+
+.notifHeader{
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.profileEvents{
+    margin-left: 5%;
+    margin-top: 10%;
+    background: #d9d9d9;
+    border-radius: 40px;
+    height: 300px;
+    width: 240px;
+    color: black;
+    font-size: 14px;
+}
+
+.eventHeader{
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.middleProfileColumn{
+    width: 80%;
+    background: #d9d9d9;
+    height: 100vh;
+    margin: 1%;
+    border-radius: 40px;
+    overflow: auto;
+}
+
+.rightProfileColumn{
+    width: 20%;
+    height: 100%;
+    overflow: auto;
+}
+
+.profileFriends{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 40px;
+    width: 240px;
+    margin-left: 5%;
+    margin-top: 15%;
+    color: black;
+    font-size: 20px;
+}
+
+.searchBar{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    background-color: #d9d9d9;
+    border-radius: 30px;
+    border-color: transparent;
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.friendsLogoText{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.friendLogo{
+    color: black;
+    width: 34px;
+    height: 34px;
+}
+
+.friend{
+    width: 100%;
+    border-top: 2px solid #d9d9d9;
+    margin: 2px;
+}
+
+.friendPic{
+    width: 50px;
+    height: 50px;
+}
+
+.friendName{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.friendUser{
+    font-size: 12px;
+}
+
+.profileChats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 40px;
+    width: 240px;
+    margin-left: 5%;
+    margin-top: 15%;
+    color: black;
+}
+
+.chatLogoText{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.chatLogo{
+    width: 28px;
+    height: 28px;
+}
+
+.chatGroup{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    border-top: 2px solid #d9d9d9;
+    margin: 5px;
+}
+
+.chatPic{
+    width: 50px;
+    height: 50px;
+}
+
+.friendName{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.friendUser{
+    font-size: 12px;
+}
+
+.showAllChats{
+    border-radius: 40px;
+    background: #D7A582;
+    border-color: black;
+    width: 140px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}

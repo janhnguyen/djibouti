@@ -1,0 +1,424 @@
+/* Font & Color Variables */
+
+
+/* Friends List Container */
+.friendsWidget {
+  width: 50%;
+  margin-left: 1%;
+  margin-right: 5%;
+  border-radius: 12px;
+  padding: 5px;
+  padding-right: 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #d9d9d9;
+  margin-bottom: 5%;
+}
+
+/* Header Styling */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Search Bar */
+input[type="text"] {
+  width: 90%;
+  max-width: 500px;
+  padding: 10px;
+  margin: 15px auto;
+  display: block;
+  border: 1px solid;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Friend Cards */
+.userlist {
+  background-color: #D9D9D9;
+  border: #000 solid 1px;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  min-width: 300px;
+}
+
+
+/* Username & Status */
+.userlist div:first-child {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Icons & Buttons Container */
+.friends-icons-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+/* Buttons */
+button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Action Buttons */
+button[title="Accept"] {
+  background: var(--button-color);
+  color: white;
+}
+
+button[title="Deny"] {
+  background: var(--red-button-color);
+  color: white;
+}
+
+button[title="Block User"] {
+  background-color: #E37479;
+  color: white;
+}
+
+button[title="Unblock User"] {
+  background-color: #E37479;
+  color: white;
+}
+
+button[title="unadd"] {
+  background: #666;
+  color: white;
+}
+
+/* Hover Effects */
+button:hover {
+  filter: brightness(0.9);
+}
+
+/* Responsive Design */
+
+
+.ellipsis-menu {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+
+.dots {
+  display: flex;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.action-container {
+  position: relative;
+  display: inline-block;
+}
+
+.pendingWidget {
+  background-color: #D9D9D9;
+  margin-bottom: 5%;
+  min-width: 35%;
+  border-radius: 12px;
+  padding: 5px;
+  padding-right: 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  filter: opacity(70%);
+}
+
+.pendingWidget ul {
+  min-height: 600px;
+  max-height: 600px;
+  overflow-y: auto;
+  padding: 0;
+  margin-left: 8%;
+  padding-right: 2%;
+  margin-top: 1%;
+}
+
+.pendingOptions {
+  display: flex;
+  gap: 5px;
+}
+
+.dropdowner {
+  text-align: right;
+  position: absolute;
+  background-color: #d9d9d9;
+  width: 150px;
+  height: 80px;
+  padding-top: 1%;
+  bottom: -45px;
+  z-index: 9999;
+  right: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 0.5px solid black;
+}
+
+.dropdowner button {
+  width: 100px;
+}
+
+.pendingStatus {
+  text-align: left;
+}
+
+.pendingStatus p {
+  color: #7C7373;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.name {
+  font-size: 1.4rem !important;
+  font-weight: bold !important;
+}
+
+.profile-p {
+  width: 50px;
+  /* Adjust size */
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* Ensures proper aspect ratio */
+  border: 2px solid #ddd;
+  background-color: white;
+}
+
+.ri {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* Adds spacing between image and text */
+  width: 100%;
+  height: 100px;
+}
+
+.na {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 45px;
+}
+
+.pendingWidget h5 {
+  color: black;
+  margin-bottom: -2%;
+  margin-top: 2%;
+  margin-left: 6%;
+}
+
+.friendslist {
+  display: flex;
+  flex-direction: row;
+}
+
+.friendcontain {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  padding-left: 3%;
+  border: #000 solid 2px;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 12px 0;
+  position: relative;
+}
+
+.deletePost {
+  padding-right: 5%;
+}
+
+.deletePost img {
+  width: 30px;
+  padding-right: 15%;
+  cursor: pointer;
+}
+
+.leftcontain {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* Adds spacing between image and text */
+  width: 100%;
+  height: 100px;
+  padding-left: 1%;
+}
+
+.name-f {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #D7A582 !important;
+}
+
+.profile-pf {
+  width: 65px;
+  height: 65px;
+  /* Adjust size */
+  border-radius: 50%;
+  object-fit: cover;
+  /* Ensures proper aspect ratio */
+  border: 2px solid #ddd;
+  background-color: white;
+  cursor: pointer;
+}
+
+.friendsWidget ul {
+  overflow-y: auto;
+  min-height: 600px;
+}
+
+.viewprofile {
+  position: absolute;
+  bottom: 28px;
+  left: 100px;
+  font-size: 12px;
+  color: #000;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.autocomplete ul {
+  width: 500px;
+  margin-left: -1%;
+  overflow-y: hidden !important;
+  align-items: center;
+  padding-left: 1%;
+}
+
+.searchfunction {
+  position: absolute;
+}
+
+.profileform {
+  margin-left: 10%
+}
+
+.auto-sm {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden !important;
+}
+
+.topsearch {
+  display: flex;
+}
+
+.sm-b {
+  margin-right: 8%;
+  margin-top: 1.5%;
+}
+
+.autocompletelist {
+  overflow-x: hidden;
+  max-height: 200px !important;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 805px) {
+  .friendslist {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .friendsWidget {
+    width: 90%;
+    margin-right: 8% !important;
+    padding-right: none !important;
+    margin-right: 5%;
+  }
+
+  .pendingWidget {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: none !important;
+  }
+
+  .topsearch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .sm-b {
+    margin-left: 2%;
+    margin-bottom: 1%;
+  }
+
+  .autocompletelist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pendingWidget ul {
+    min-height: 600px;
+    max-height: 600px;
+    overflow-y: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .userlist {
+    min-width: 150px !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 80px;
+  }
+
+  .profileform {
+    width: 100%;
+  }
+
+  .auto-sm {
+    width: 100%;
+  }
+
+  input[type="text"] {
+    width: 80% !important;
+  }
+
+  .userlist {
+    margin-left: 5%;
+  }
+
+  .friendcontain {
+    display: flex;
+    flex-direction: column;
+    min-height: 80px;
+  }
+
+  .deletePost {
+    justify-content: none !important;
+    margin-right: 4%;
+    margin-left: auto;
+  }
+
+  .dropdowner {
+    bottom: -75px;
+    right: 5px;
+  }
+}

@@ -1,0 +1,380 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.mainContainer {
+  background: white;
+  padding-top: 120px;
+}
+
+.webHomePage {
+  background: white;
+  height: 104vh;
+  display: flex;
+  padding-top: 50px;
+}
+
+.webFeed {
+  width: 74%;
+  background: #D9D9D9;
+  margin: 1% 2% 1% 4%;
+  border-radius: 40px;
+  overflow: auto;
+  padding: 20px;;
+  box-sizing: border-box;
+  border-top: #D9D9D9 solid 30px;
+  border-bottom: #D9D9D9 solid 30px;
+}
+
+.webFeed::-webkit-scrollbar {
+  width: 8px;
+}
+
+.webFeed::-webkit-scrollbar-track {
+  background: transparent;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.webFeed::-webkit-scrollbar-thumb {
+  background-color: #969696;
+  border-radius: 10px;
+}
+
+.webFeed::-webkit-scrollbar-thumb:hover {
+  background-color: #7a7a7a;
+}
+
+/* === SIDEBAR STYLING FIXED === */
+.webSideBar {
+  width: 19%;
+  margin: 1% 1% 1% 0;
+  overflow: auto;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  overflow-x: hidden;
+}
+
+.sideSearch {
+  background: #D9D9D9;
+  height: 40px;
+  width: 90%;
+  border: none;
+  border-radius: 40px;
+  padding-left: 20px;
+  font-size: 15px;
+  color: #969393;
+  margin: 10px auto 0 auto;
+}
+
+.sideNavHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px 5px 15px;
+}
+
+.sideNavHeaderImg {
+  width: 30px;
+  height: 30px;
+}
+
+.sideNavHeaderTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+/* FRIENDS + CHATS LIST ITEM STYLES */
+.sideNavItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 15px;
+  border-top: 1px solid #ccc;
+  transition: background-color 0.25s ease;
+  cursor: pointer;
+  min-height: 60px;
+}
+
+.sideNavItem:hover {
+  background-color: #d7a583;
+}
+
+.sideNavImg {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.sideNavText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  line-height: 1.3;
+}
+
+
+.homeFriendName {
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sideNavItem:hover .homeFriendName,
+.sideNavItem:hover .homeFriendUser {
+  color: white;
+}
+
+.homeFriendUser {
+  font-size: 13px;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* EVENTS SECTION */
+.sideEvents {
+  padding: 0 15px 10px 15px;
+}
+
+.sideNavEventsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sideEventItem {
+  background: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.sideEventItem:hover {
+  background-color: #ececec;
+}
+
+.eventTitle {
+  font-size: 14px;
+  font-weight: bold;
+  color: #d7a583;
+  cursor: pointer;
+}
+
+.eventMeta {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  color: #555;
+}
+
+.eventStatus,
+.eventCount {
+  font-style: italic;
+}
+
+.eventContent {
+  font-size: 13px;
+  color: #333;
+  margin-top: 6px;
+}
+
+.sideNavEmptyText {
+  color: #888;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+/* === OTHER COMPONENTS === */
+.createPost {
+  margin-left: 1%;
+  margin-top: 2%;
+  border-radius: 25px;
+  min-width: 95%;
+  max-width: 100px;
+  padding: 10px;
+}
+
+.loginButton {
+  font-weight: bold;
+  color: black;
+  font-size: 64px;
+  background: white;
+  height: 100%;
+  width: 100%;
+  border: transparent;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+@keyframes sunrise {
+  0% {
+    background-color: #958EF0;
+    transform: translateY(0);
+  }
+  25% {
+    background-color: #d7a583;
+    transform: translateY(-20px);
+  }
+  50% {
+    background-color: black;
+    transform: translateY(0);
+  }
+  75% {
+    background-color: #d7a583;
+    transform: translateY(-20px);
+  }
+  100% {
+    background-color: #958EF0;
+    transform: translateY(0);
+  }
+}
+
+.skyline {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  right: 5%;
+  bottom: 35%;
+  border-radius: 50%;
+  animation: sunrise 7s infinite ease-in-out;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.homeQuote {
+  font-size: 70px;
+  position: absolute;
+  bottom: 5%;
+  left: 1%;
+  width: 50%;
+  text-align: left;
+  font-family: "Righteous", sans-serif;
+  font-weight: normal;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.downArrow {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  width: 50%;
+  text-align: center;
+  color: #000;
+  cursor: pointer;
+  animation: bounce 7s infinite ease-in-out;
+  width: fit-content;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.selectCityToActivities {
+  position: absolute;
+  left: 0%;
+  bottom: 45%;
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.loginToViewCities {
+  position: absolute;
+  left: 0%;
+  bottom: 60%;
+  width: 50%;
+  font-weight: normal;
+}
+
+@keyframes flyAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+.citiesListButtons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+  padding: 20px;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.cityButton {
+  padding: 10px;
+  font-size: 14px;
+  border: solid 1px #ccc;
+  border-radius: 20px;
+  width: fit-content;
+  background-color: white;
+  transition: background-color 0.2s ease;
+  color: gray;
+}
+
+.cityButton:hover {
+  background-color: #d7a583;
+  color: white;
+}

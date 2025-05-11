@@ -1,0 +1,19 @@
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.pic-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .members {
+        flex-direction: column;
+        align-items: center;
+    }
+}

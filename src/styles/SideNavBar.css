@@ -1,0 +1,169 @@
+.sideNavContainer {
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.sideNavContainer * {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+.sideSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sideSectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+.sideIcon {
+  width: 22px;
+  height: 22px;
+}
+
+.chatItemLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.chatItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-bottom: 1px solid black;
+  transition: background-color 0.2s ease;
+}
+
+
+.chatItem:hover {
+  background-color: #d7a583;
+}
+
+.chatAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.chatText {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chatName {
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chatMessage {
+  font-size: 12px;
+  color: #555;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 2px;
+}
+
+.chatItem:hover .chatName,
+.chatItem:hover .chatMessage {
+  color: black;
+}
+
+.sideNavEmptyText {
+  font-size: 13px;
+  text-align: center;
+  color: #999;
+  padding: 10px 0;
+}
+
+.sideNavEventsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sideEventItem {
+  background: #ffffff;
+  position: relative;
+  border: 1px solid #ccc;
+  border-left: 4px solid #d7a583;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 13px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform 0.15s ease;
+  overflow: hidden;
+}
+
+.sideEventItem:hover {
+  transform: translateY(-2px);
+  background: #f9f9f9;
+}
+
+.eventTitle {
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+}
+
+.eventMeta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #555;
+}
+
+.eventContent {
+  font-size: 13px;
+  color: #444;
+  padding-left: 2px;
+}
+
+.eventStatus,
+.eventCount {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.sideEventItem button {
+  background: none;
+  border: 1px solid #d7a583;
+  color: #d7a583;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: all 0.2s ease;
+}
+
+.sideEventItem button:hover {
+  background-color: #d7a583;
+  color: white;
+}
