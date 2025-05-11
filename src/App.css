@@ -1,0 +1,970 @@
+
+.App {
+  text-align: center;
+  background-color: white;
+}
+
+.book-mark {
+  margin-left: 10%
+}
+
+.header-right{
+  display: flex;
+}
+
+.settings-icon {
+  margin-left: 15px;
+  color: black; 
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.settings-icon:hover {
+  color: gray;
+}
+
+.settings{
+  display: flex;
+  height: 95vh;
+}
+
+.setting-left{
+  flex:1;
+  color:black;
+  background-color: #f0efef;
+}
+
+.setting-right{
+  flex:2;
+  color:black;
+  background-color: #e4e4e4;
+  text-align: left;
+}
+
+.setting-right h3{
+  margin-left: 5%;
+}
+
+.account-card{
+  margin-top: 15%;
+  margin-left: 5%;
+  display: flex;
+  width:90%;
+  background-color: #d0cdcd;
+  border: 2px solid #020202;
+}
+
+.account-card-pic{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5%;
+}
+
+.f-block {
+  margin-top: 5%;
+}
+
+.c-block {
+  margin-top: 20%
+}
+
+.account-card-info{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  flex:2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.account-card-username {
+  font-weight: bold;
+}
+
+.account-card-name {
+  font-weight: bold;
+} 
+
+.account-card-info p{
+  font-size: small;
+  margin: 3px 0; 
+}
+
+.members {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+.mike-contact-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10%;
+}
+
+.mike-paragraph {
+  padding-left: 5%;
+}
+
+.michaels-page {
+  color: #000;
+  display: flex;
+}
+
+.mike-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.mike-left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.pic-name{
+  display: flex;
+  flex-direction: column;
+}
+
+.mike-pic {
+  margin-top: 5%;
+  height: 310px;
+  width: 250px;
+}
+
+.saj-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.saj-left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.saj-pic {
+  margin-top: 5%;
+  height: 250px;
+  width: 250px;
+}
+
+.saj-contact-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10%;
+}
+
+.about-us-pic{
+  height: 310px;
+  width: 250px;
+} 
+
+.names-bth {
+  display: flex;
+  justify-content: center;
+  gap: 20%; 
+  /* change this to fit the actual spacing */
+}
+
+.michael-btn {
+  border: none;
+  background-color: transparent;
+  font-weight: bold; 
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.michael-btn:hover {
+  background-color: #afadac;
+}
+
+.jason-btn {
+  border: none;
+  background-color: transparent;
+  font-weight: bold; 
+  cursor: pointer;
+  font-size: 22px; 
+}
+
+.jason-btn:hover {
+  background-color: #afadac;
+}
+
+.jackson-btn {
+  border: none;
+  background-color: transparent;
+  font-weight: bold; 
+  cursor: pointer;
+  font-size: 22px; 
+}
+
+.jackson-btn:hover {
+  background-color: #afadac;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.deletePost{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  color: black;
+  font-size: 16px;
+}
+
+
+.settings{
+  width:100%;
+}
+
+.link-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  outline:none;
+}
+
+.link-button:hover,
+.link-button:focus,
+.link-button:active {
+  text-decoration: none;
+  outline:none;
+
+}
+
+.submitbutton{
+  background-color: blue;
+  margin:10px;
+  border-radius: 5px;
+}
+
+.no-suggestions {
+  color: #999;
+  padding: 0.5rem;
+}
+
+.no-comments, .comment-content {
+  max-height: min-content;
+}
+
+.auto-sm {
+  display: block; /* or unset or whatever you want for mobile */
+  gap: 10px
+}
+
+@media (min-width: 769px) {
+  .auto-sm {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+.sm-b{
+  margin-top: 1.5%;
+  max-height: 40px;
+}
+
+.autocomplete input {
+    width: calc(300px + 1rem);
+}
+
+.autocomplete{
+    min-height: 0;
+    margin-right: 30px;
+}
+
+.suggestions {
+  border: 1px solid #999;
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: 143px;
+  overflow-y: auto;
+  padding-left: 0;
+  width: calc(600px + 1rem);
+
+  display:inline-block;
+  position:relative;
+  background-color: #d7a582;  
+  color: #0d0c09;
+}
+
+.suggestions li {
+  padding: 0.5rem;
+}
+
+.suggestion-active,
+.suggestions li:hover {
+  background-color: #e0bda4;  
+  color: #0d0c09;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid #999;
+
+}
+
+.profileform label{
+   display:block;
+
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.postlist {
+  text-align: left;
+  background: blue;
+  border-radius: 20px;
+  padding:30px;
+  margin:10px;
+
+  width:60%;
+  display: inline-flex;
+}
+
+
+.comments{
+    background:white;
+    width:90%;
+    display:block;
+    border-radius: 20px;
+    padding:10px;
+    margin:10px;
+    color:black;
+}
+
+.commentlist {
+  text-align: left;
+  background: lightblue;
+  color:black;
+  border-radius: 20px;
+  padding:10px;
+  margin:10px;
+  font-size: 12px;
+  width:90%;
+  display:block;
+}
+
+.hide{
+  display:none;
+}
+
+.maincontent{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.postlist {
+  text-align: left;
+  background: #ffffff; /* White background */
+  border-radius: 20px;
+  padding: 30px;
+  margin: 10px;
+  width: 55%;
+  display: flex; /* Change from inline-flex to flex */
+  flex-direction: column; /* Ensure items stack vertically */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border: 1px solid #ddd; /* Light border */
+  height: auto !important; /* Ensure no height restrictions */
+  min-height: 100px; /* Set a baseline height */
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 95%;
+  margin-left: 2.5%;
+  height: auto !important; /* Ensure it adjusts dynamically */
+  overflow: visible; /* Prevent hidden overflow */
+}
+
+.postbody {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  min-width: 90%;
+}
+
+.comment-block {
+  width: 100%;
+  height: auto !important; /* Forces height to adjust */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.comment-block p{
+  min-height: 25px;
+  max-height: fit-content;
+}
+
+.sidenav{
+  /* need to specify some position other than static, so height can apply.
+     Fixed works since it will stay fixed to the side - 0 from both left and top. */
+  position:fixed;
+  left:0;
+  top:0;
+  height:100%;
+  width:100px;
+
+  /* internally to this container, we want to use flex positioning of the menu elements */
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: blue;
+}
+
+.tag-active{
+  border: thick solid red;
+}
+
+.sidenav ul{
+   list-style-type: none;
+   padding:10px;
+   margin: 40px 0 0;
+}
+
+
+
+.comment-indicator{
+  text-align:right;
+  width:100%;
+  display:block;
+  float:right;
+  margin-top: 10px;
+}
+
+.comment-icon{
+  width:40px;
+  height:40px;
+  float:right;
+}
+
+.comment-indicator-text{
+  background-color: lightblue;
+  color: black;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  width:120px;
+  padding:5px;
+  float:right;
+  margin-left:10px;
+  text-align: center;
+}
+
+.hide{
+  display:none;
+}
+
+/* The Modal (background) */
+.modal {
+  display: block;
+  position: fixed; /* Stay in place */
+  z-index: 0; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 1px 10px 20px 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  height: 200px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  line-height: 42px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.chat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat__main {
+  flex: 0.6;
+}
+
+.message__container {
+  width: 100%;
+  height: 60vh;
+  background-color: purple;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.chat__footer {
+  padding: 20px;
+  background-color: black;
+  width: 100%;
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.message {
+  width: 80%;
+  height: 100%;
+  border: 1px solid #ddd;
+  outline: none;
+  padding: 12px;
+}
+
+.messageIcon {
+  width:40px;
+  height:40px;
+  transition: transform 0.3s ease;
+}
+
+.messageIcon:hover {
+  transform: scale(1.1); 
+  cursor: pointer;
+}
+
+.sendBtn {
+  width: 150px;
+  background-color: green;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: yellow;
+  cursor: pointer;
+}
+
+.message__recipient {
+  background-color: #000;
+  padding: 8px;
+  font-size: 15px;
+  text-align: start;
+  color: #fff;
+  width: fit-content;
+}
+
+.message__sender {
+  background-color: blue;
+  max-width: 400px;
+  padding: 8px;
+  margin-left: auto;
+  font-size: 15px;
+  width: fit-content;
+}
+
+.message__sender {
+  text-align: right;
+}
+
+.recipient__name {
+  text-align: left;
+  color: #000;
+  font-size: 13px;
+}
+
+.sender__name {
+  font-size: 13px;
+  color: #000;
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+.registerBody {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.registerContainer {
+  width: 1000px;
+  background-color: #d3d3d3;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-container {
+  background-color: #d3d3d3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 5px;
+  margin-right: 5%;
+  margin-left: 8%;
+}
+
+.registerText {
+  color: black;
+  font-size: 36px;
+  vertical-align: top;
+  text-shadow: 0 2px 4px gray;
+  font-weight: bold;
+}
+
+.registerFieldText {
+  text-align: left;
+  color: black;
+  font-size: 36px;
+  text-shadow: 0 2px 4px gray;
+  font-weight: bold;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.inputContainer {
+  width: 80%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.registerButton{
+  border-radius: 10px;
+  font-size: 36px;
+  margin-top: 20px;
+  margin-right: 8px;
+  margin-left: 8px;
+  padding: 10px;
+  font-weight: bold;
+  text-shadow: 0 2px 4px gray;
+  background: #D7A582;
+}
+
+.registerAAU{
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}
+
+.registerErrorMessage{
+  color: red;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+.profileContainer{
+  display: flex;
+  height: 100%;
+  background: white;
+  .leftProfileColumn{
+    width: 20%;
+    height: 100%;
+    overflow: auto;
+    .profileButton{
+      display: flex;
+      gap: 15%;
+      background: #d9d9d9;
+      border-radius: 40px;
+      height: 115px;
+      width: 240px;
+      margin-left: 5%;
+      margin-top: 15%;
+      text-decoration: none;
+      .profilePic{
+        margin-left: 30%;
+        margin-top: 25%;
+        width: 75px;
+        height: 75px;
+      }
+      .profileText{
+        margin-top: 7%;
+        color: black;
+        font-size: 14px;
+        text-align: left;
+      }
+      .profileName{
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+    .postButton{
+      background: #45BA8B;
+      border-radius: 100px;
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 10%;
+      margin-bottom: 10%;
+      margin-left: 5%;
+      width: 240px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      gap: 20px;
+    }
+    .profileNotifications{
+      margin-left: 5%;
+      margin-top: 10%;
+      background: #d9d9d9;
+      border-radius: 40px;
+      height: 600px;
+      width: 240px;
+      color: black;
+      font-size: 14px;
+      .notifHeader{
+        font-size: 24px;
+        color: black;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
+    .profileEvents{
+      margin-left: 5%;
+      margin-top: 10%;
+      background: #d9d9d9;
+      border-radius: 40px;
+      height: 300px;
+      width: 240px;
+      color: black;
+      font-size: 14px;
+      .eventHeader{
+        font-size: 24px;
+        color: black;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
+  }
+  .middleProfileColumn{
+    width: 60%;
+    background: #d9d9d9;
+    height: 100vh;
+    margin: 1%;
+    border-radius: 40px;
+    overflow: auto;
+  }
+  .rightProfileColumn{
+    width: 20%;
+    height: 100%;
+    overflow: auto;
+    .profileFriends{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: white;
+      border-radius: 40px;
+      width: 240px;
+      margin-left: 5%;
+      margin-top: 15%;
+      color: black;
+      font-size: 20px;
+      .searchBar{
+        margin-top: 10%;
+        display: flex;
+        align-items: center;
+        background-color: #d9d9d9;
+        border-radius: 30px;
+        border-color: transparent;
+        width: 250px;
+        height: 40px;
+        font-size: 15px;
+      }
+      .friendsLogoText{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .friendLogo{
+        color: black;
+        width: 34px;
+        height: 34px;
+      }
+      .friend{
+        width: 100%;
+        border-top: 2px solid #d9d9d9;
+        margin: 2px;
+      }
+      .friendPic{
+        width: 50px;
+        height: 50px;
+      }
+      .friendName{
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .friendUser{
+        font-size: 12px;
+      }
+    }
+    .profileChats{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: white;
+      border-radius: 40px;
+      width: 240px;
+      margin-left: 5%;
+      margin-top: 15%;
+      color: black;
+      .chatLogoText{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 20px;
+      }
+      .chatLogo{
+        width: 28px;
+        height: 28px;
+      }
+      .chatGroup{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        border-top: 2px solid #d9d9d9;
+        margin: 5px;
+      }
+      .chatPic{
+        width: 50px;
+        height: 50px;
+      }
+      .friendName{
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .friendUser{
+        font-size: 12px;
+      }
+      .showAllChats{
+        border-radius: 40px;
+        background: #D7A582;
+        border-color: black;
+        width: 140px;
+        height: 40px;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+.noDecLink{
+  color: black;
+  text-decoration: none;
+}
+
+
+.cityArtLogin {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  background: linear-gradient(0deg,rgba(215, 165, 130, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  padding-top: 100px;
+  
+}
+
+
+
+@keyframes flyAcross {
+  0% {
+    left: -20%; 
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  100% {
+    left: 98%; 
+    transform: rotate(0deg);
+  }
+}
+
+.loginPageAirplane {
+  position: absolute;
+  bottom: 60%;
+  left: -20%;
+  animation: flyAcross 15s linear infinite;
+  will-change: transform;
+}
+
+
+
+.settingsTop {
+  position: absolute;
+  background: linear-gradient(180deg,rgba(215, 165, 130, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  top: 0;
+  left: 0;
+  height: 180px;
+  width: 100%;
+}
+
+
+
